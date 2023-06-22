@@ -51,10 +51,10 @@
 
 .App-logo2 {
   animation:
-    translate-x 5000ms infinite alternate ease,
+    translate-x 3000ms infinite alternate ease,
     scale 1000ms infinite alternate ease-in-out,
-    translate-x 5000ms infinite alternate ease-in-out,
-    translate-y 5000ms infinite alternate ease-in-out,
+    translate-x 3000ms infinite alternate ease-in-out,
+    translate-y 3000ms infinite alternate ease-in-out,
     rotate 3000ms infinite linear;
 
   width: 40vmin;
