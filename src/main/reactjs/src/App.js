@@ -7,10 +7,9 @@ function App() {
   const homin2Background = `url(${homin3})`;
 
   return (
-    <div>
-      <img alt='' src={homin} width={300} border="1"style={{marginTop:'170px'}} className="App-logo2"/>
-      <br/>
-      <h2 style={{marginTop:'135px', background: homin2Background}} className="App-logo2"> Docker 배포 성공 기원!!!</h2>
+    <div className="App-logo2">
+      <img alt='' src={homin} width={300} border="1"style={{marginTop:'170px'}}/>
+      <h2 style={{marginTop:'135px', background: homin2Background}}> Docker 배포 성공 기원!!!</h2>
     </div>
   );
 }
