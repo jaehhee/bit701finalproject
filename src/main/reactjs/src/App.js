@@ -1,6 +1,5 @@
 import './App.css';
 import homin from './homin2.gif';
-import homin2 from './homin5.gif';
 import homin3 from './homin.gif';
 
 function App() {
