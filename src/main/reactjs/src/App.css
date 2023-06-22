@@ -81,13 +81,13 @@
 }  */
 @keyframes translate-x {
   0% {
-    transform: translate(0vmin, 60vmin);
+    transform: translate(0vmin, 25vmin);
   }
   50% {
-    transform: translate(25vmin, 45vmin);
+    transform: translate(25vmin, 25vmin);
   }
   100% {
-    transform: translate(-25vmin, -5vmin);
+    transform: translate(-25vmin, -25min);
   }
 }
 
