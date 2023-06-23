@@ -42,12 +42,18 @@
 
 
 *{
-  font-family: 'Jua';
+  font-family: 'Dovemayo_gothic';
 }
 
 ul.menu{
   list-style: none;
 }
+
+body{
+  padding-left: 50px;
+  padding-top: 30px;
+}
+
 
 ul.menu li{
   float: left;
