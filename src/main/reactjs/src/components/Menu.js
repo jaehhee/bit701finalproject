@@ -2,8 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 function Menu(props) {
-    const myname = sessionStorage.myname;
-    const myid = sessionStorage.myid;
+
     const login = sessionStorage.loginok;
 
     const handleLogout = () => {

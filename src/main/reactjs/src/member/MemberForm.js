@@ -15,7 +15,6 @@ function MemberForm(props) {
 
     const [myid, setMyid] = useState('');
     const [mypass, setMypass] = useState('');
-    const [myaddress, setMyaddress] = useState('');
     const [myaddress1, setMyaddress1] = useState('');
     const [myaddress2, setMyaddress2] = useState('');
     
@@ -85,7 +84,7 @@ function MemberForm(props) {
                 우편번호: ${data.zonecode}
             `)
 
-            setMyaddress(`(${data.zonecode})(${data.address})(${data.buildingName})`)
+            setMyaddress1(`(${data.zonecode})(${data.address})(${data.buildingName})`)
             setOpen(false);
             setOpenPostcode(false);
         },
