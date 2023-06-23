@@ -69,10 +69,11 @@ public class MemberController {
 		if(n==1) {
 			myname=memberService.getName(myid);
 		}
+		System.out.println("getname>>"+myid);
 		
 		Map<String, String> map = new HashMap<>();
 		map.put("success", n==1?"yes":"no");
-		map.put("mypass", myname);
+		map.put("myname", myname);
 		
 		return map;
 			
