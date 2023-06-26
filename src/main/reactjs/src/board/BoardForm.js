@@ -1,13 +1,12 @@
 import React, { useState } from 'react';
 import '../App.css';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import  Axios  from 'axios';
 
 function BoardForm(props) {
     const [subject,setSubject]=useState('');
     const [photo,setPhoto] = useState('');
     const [content,setContent] = useState('');
-
     const navi=useNavigate();
 
     //이미지 경로
@@ -18,6 +17,12 @@ function BoardForm(props) {
 
     const onSubmitEvent=(e)=>{
         e.preventDefault();
+
+        Axios.post("/board/insert",{myid,myname,subject,content})
+        .then(res=>{
+            // 목록 이동
+            navi("/board/list/1");
+        })
     }
 
     // 파일 업로드
@@ -74,7 +79,7 @@ function BoardForm(props) {
                     </tbody>
                 </table>
             </form>
-            <img src={`${photoUrl}${photo}`} 
+            <img src={`${photoUrl}${photo}`}  alt=''
             style={{width:'200px',position:'absolute',left:'600px',top:'160px'}}/>
         </div>
     );

@@ -24,7 +24,7 @@ function RouteMain(props) {
                     <Route path='form' element={<BoardForm/>}/>
                     <Route path='list' element={<BoardList/>}/>
                     <Route path='list/:currentPage' element={<BoardList/>}/>
-                    <Route path='detail/:num' element={<BoardDetailPage/>}/>
+                    <Route path='detail/:num/:currentPage' element={<BoardDetailPage/>}/>
                 </Route>
 
                 <Route path='*' element={

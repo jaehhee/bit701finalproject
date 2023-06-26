@@ -97,6 +97,7 @@ public class BoardController {
         if(endPage>totalPage)
             endPage=totalPage;
 
+        System.out.println("to>>"+totalCount);
         //시작번호
         startNum=(currentPage-1)*perPage;
         //각페이지당 출력할 번호
