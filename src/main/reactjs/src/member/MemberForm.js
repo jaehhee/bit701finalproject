@@ -136,7 +136,7 @@ function MemberForm(props) {
                                 <div className='input-group'>
                                     <input type='text' className='form-control'
                                         required style={{ width: '120px' }}
-                                        value={myaddress} onChange={(e) => setMypass(e.target.value)} />
+                                        value={myaddress1} onChange={(e) => setMyaddress1(e.target.value)} />
 
                                     <button type='button' className='btn btn-sm btn-outline-success'
                                         onClick={handleClickOpen}>주소검색</button>
